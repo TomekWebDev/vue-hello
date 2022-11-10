@@ -17,13 +17,23 @@
 
         <!-- QUI DENTRO È DOVE FUNZIONA VUE, FUORI CRASHA TUTTO -->
 
-        <h1 v-bind:id='iddio' v-bind:class='[textColor, background]'> {{ titleContent }} </h1>
+        <h1 v-bind:class='[textColor, background,]'> {{ titleContent }} </h1>
 
-        <img v-bind:src='mainImage' alt="">
+        <img  v-bind:src='mainImage' alt="">
 
-        <button @click="changeColor">Change color</button>
-        <button @click="changeImage">Change image</button>
-        <button @click="changeBackground">Change Background</button>
+        <div class="d-inline-flex flex-column align">
+
+            <button  :class="classeBootstrap" @click="changeColor">Change color</button>
+            <button  :class="classeBootstrap" @click="changeImage">Change image</button>
+            <button  :class="classeBootstrap" @click="changeBackground">Change Background</button>
+
+        </div>
+
+        
+
+        <div>
+            <button :class="classeBootstrap" @click="changeBtn">Change Btn style</button>
+        </div>
 
     </div>
 

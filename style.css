@@ -7,3 +7,11 @@
     background-color: red;
     padding: 1rem;
 }
+
+.bg-black{
+    color: var(--coloreTitoli);
+}
+
+:root{
+    --coloreTitoli: black;
+}

@@ -5,7 +5,7 @@ var app = new Vue(
             textColor: 'text-danger',
             titleContent: 'ciao',
             mainImage: 'https://picsum.photos/300/300',
-            iddio: 'dio'
+            background: 'bg-green'
         },
         methods: {
             changeColor: function(){
@@ -19,6 +19,12 @@ var app = new Vue(
                     return this.mainImage = 'https://picsum.photos/300/300/'
                 }
                 return this.mainImage = 'https://picsum.photos/300/300'
+            },
+            changeBackground: function(){
+                if(this.background == 'bg-green'){
+                    return this.background = 'bg-red'
+                }
+                return this.background = 'bg-green'
             }
 
         }
